@@ -3,6 +3,8 @@ langchain
 langchain_community
 langchain_core
 langchain_groq
+pypdf
+groq
 langchain_openai
 langchain_pinecone
 langchain_text_splitters
@@ -18,3 +20,5 @@ langchain-groq
 langchainhub 
 chromadb 
 langchain_huggingface
+wikipedia
+arxiv
