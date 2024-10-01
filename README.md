@@ -4,17 +4,20 @@
 ChatBot-Wiki-Agent-Navigator is an intelligent question-answering system that combines the power of a vector store and Wikipedia to provide accurate and contextual responses. It uses a sophisticated routing mechanism to decide whether to retrieve information from a local vector store or to search Wikipedia based on the nature of the question.
 
 ## Features
+
 - Intelligent routing of questions to appropriate knowledge sources
 - Integration with a vector store for efficient retrieval of pre-stored information
 - Wikipedia search capability for general knowledge questions
-- FastAPI-based RESTful API for easy integration
+- FastAPI-based RESTful API for easy integration and real-time query handling
 - Langchain-powered workflow for flexible and extensible question-answering pipeline
+- Hybrid response generation, dynamically selecting the best data source based on the nature of the query
+- Scalable architecture allowing for seamless expansion of knowledge sources
+- Efficient processing of both factual and contextual questions, ensuring relevant answers
 
 ## Project Structure
 ```
 project_root/
 ├── backend/
-│   ├── main.py
 │   ├── config.py
 │   ├── models.py
 │   ├── routers/
@@ -47,7 +50,6 @@ project_root/
 2. Create a virtual environment and activate it:
    ```
    python -m venv .venv
-   source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
    ```
 
 3. Install the required packages:
@@ -95,7 +97,9 @@ You can configure the following components in their respective files:
 
 - [FastAPI](https://fastapi.tiangolo.com/)
 - [Langchain](https://python.langchain.com/)
-- [OpenAI](https://openai.com/)
+- [GroqAPI](https://console.groq.com/)
+- [AstraDB](https://astra.datastax.com/)
+- [HuggingFace](https://huggingface.co/) 
 - [Wikipedia API](https://pypi.org/project/Wikipedia-API/)
 
 
@@ -105,8 +109,8 @@ We welcome contributions to the ChatBot Wiki Agent Navigator! Please follow thes
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some Feature'`)
+4. Push to the branch (`git push origin feature/Feature`)
 5. Open a Pull Request
 
 Please make sure to update tests as appropriate and adhere to the [Code of Conduct](CODE_OF_CONDUCT.md).
