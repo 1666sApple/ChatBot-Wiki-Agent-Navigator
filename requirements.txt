@@ -2,6 +2,7 @@ fastapi
 uvicorn[standard]
 pydantic
 langchain
+langchain-groq 
 openai
 faiss-cpu
 wikipedia-api
@@ -10,4 +11,4 @@ httpx
 tiktoken
 cassio
 langchain-huggingface
-pickle
+tf-keras
