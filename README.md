@@ -17,7 +17,6 @@ ChatBot-Wiki-Agent-Navigator is an intelligent question-answering system that co
 ## Project Structure
 ```
 project_root/
-├── backend/
 │   ├── config.py
 │   ├── models.py
 │   ├── routers/
