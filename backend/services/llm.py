@@ -4,5 +4,5 @@ from backend.config import GROQ_API_KEY
 def get_llm():
     return ChatGroq(
         groq_api_key=GROQ_API_KEY, 
-        model_name="Llama-3.1-70B-Versatile"
+        model_name="llama-3.2-90b-text-preview"
     )
